@@ -1,5 +1,7 @@
 package com.interleave;
 
+import java.util.Stack;
+
 /**
  * Given a stack of N elements, interleave the first half of
  * the stack with the second half reversed using only one
@@ -17,6 +19,25 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        // Generate stack with N elements
+        int n = 5;
+        Stack<Integer> stack = new Stack<Integer>();
+        for (int i = 1; i <= n; i++) {
+            stack.push(i);
+        }
+        for (Integer item: stack) {
+            System.out.printf("%d\t", item);
+        }
+        System.out.println();
+        interLeave(stack);
+    }
+
+    private static Stack<Integer> interLeave(Stack<Integer> elements) {
+        int middle = elements.size()/2;
+        System.out.println("Middle element = " + middle);
+        // Split stack in half
+        // Merge Left 1st, right last, left 2nd, right 2nd to last
+        
+        return elements;
     }
 }
