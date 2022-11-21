@@ -21,7 +21,7 @@ public class App
     public static void main( String[] args )
     {
         // Generate stack with N elements
-        int n = 7;
+        int n = 14;
         Stack<Integer> stack = new Stack<Integer>();
         for (int i = 1; i <= n; i++) {
             stack.push(i);
